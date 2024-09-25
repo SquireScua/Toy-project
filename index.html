@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Note</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="main">
+  <div id="header">
+    <h1 id="title">Note</h1>
+    <h5 id="subtitle">Note anything, you want!</h5>
+  </div>
+  <div id="body">
+    <div id="searchMode" class="frame show">
+      <div id="searchArea" class="inputField">
+        <input type="text" id="searchBar" placeholder="Enter title">
+        <button id="searchBtn" type="button">Search</button>
+        <button id="addBtn" type="button">Add</button>
+      </div>
+      <ul id="itemArea">
+<!--         <li class="item" _id="0">Test<input type="checkbox"></li> -->
+      </ul>
+    </div>
+    <div id="editMode" class="frame">
+      <div id="inputArea" class="inputField">
+        <input type="text" id="titleInput" placeholder="Enter title">
+      </div>
+      <div id="contentField">
+        <textarea name="itemContent" id="itemContent"></textarea>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <button id="deleteBtn">Delete</button>
+    <span id="editOnly">
+      <button id="saveBtn">Save</button>
+      <button id="cancelBtn">Cancel</button>
+    </span>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
